@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>&lt;no title&gt; &#8212; No Bullshit Mechanics Lessons</title>
+    <title>Interception &#8212; No Bullshit Mechanics Lessons</title>
     
   <link href="../_static/css/theme.css" rel="stylesheet" />
   <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
@@ -93,7 +93,7 @@
   </a>
  </li>
 </ul>
-<ul class="nav bd-sidenav">
+<ul class="current nav bd-sidenav">
  <li class="toctree-l1 has-children">
   <a class="reference internal" href="../tutorials/intro.html">
    Tutorials
@@ -111,16 +111,21 @@
    </li>
   </ul>
  </li>
- <li class="toctree-l1 has-children">
+ <li class="toctree-l1 current active has-children">
   <a class="reference internal" href="intro.html">
    Missions
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
   <label for="toctree-checkbox-2">
    <i class="fas fa-chevron-down">
    </i>
   </label>
-  <ul class="simple">
+  <ul class="current">
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     Interception
+    </a>
+   </li>
   </ul>
  </li>
  <li class="toctree-l1 has-children">
@@ -247,14 +252,6 @@
         <!-- Table of contents -->
         <div class="d-none d-md-block col-md-2 bd-toc show">
             
-            <div class="tocsection onthispage pt-5 pb-3">
-                <i class="fas fa-list"></i> Contents
-            </div>
-            <nav id="bd-toc-nav" aria-label="Page">
-                <ul class="simple visible nav section-nav flex-column">
-</ul>
-
-            </nav>
         </div>
     </div>
 </div>
@@ -263,7 +260,9 @@
         
               <div>
                 
-  <div class="cell docutils container">
+  <div class="tex2jax_ignore mathjax_ignore section" id="interception">
+<h1>Interception<a class="headerlink" href="#interception" title="Permalink to this headline">¶</a></h1>
+<div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 <span class="kn">from</span> <span class="nn">sympy</span> <span class="kn">import</span> <span class="o">*</span>
@@ -351,10 +350,10 @@
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.collections.PathCollection at 0x7f29dd47f910&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.collections.PathCollection at 0x7f40bf85da00&gt;
 </pre></div>
 </div>
-<img alt="../_images/interception_6_1.png" src="../_images/interception_6_1.png" />
+<img alt="../_images/interception_7_1.png" src="../_images/interception_7_1.png" />
 </div>
 </div>
 <div class="cell docutils container">
@@ -566,42 +565,42 @@ input[type=range].anim-slider {
 </style>
 
 <div class="animation">
-  <img id="_anim_img31de08d4976e424bb1a0b339ebc1ac3b">
+  <img id="_anim_img5afb01d53e5d41f0a26055f197ab0dff">
   <div class="anim-controls">
-    <input id="_anim_slider31de08d4976e424bb1a0b339ebc1ac3b" type="range" class="anim-slider"
+    <input id="_anim_slider5afb01d53e5d41f0a26055f197ab0dff" type="range" class="anim-slider"
            name="points" min="0" max="1" step="1" value="0"
-           oninput="anim31de08d4976e424bb1a0b339ebc1ac3b.set_frame(parseInt(this.value));"></input>
+           oninput="anim5afb01d53e5d41f0a26055f197ab0dff.set_frame(parseInt(this.value));"></input>
     <div class="anim-buttons">
-      <button title="Decrease speed" aria-label="Decrease speed" onclick="anim31de08d4976e424bb1a0b339ebc1ac3b.slower()">
+      <button title="Decrease speed" aria-label="Decrease speed" onclick="anim5afb01d53e5d41f0a26055f197ab0dff.slower()">
           <i class="fa fa-minus"></i></button>
-      <button title="First frame" aria-label="First frame" onclick="anim31de08d4976e424bb1a0b339ebc1ac3b.first_frame()">
+      <button title="First frame" aria-label="First frame" onclick="anim5afb01d53e5d41f0a26055f197ab0dff.first_frame()">
         <i class="fa fa-fast-backward"></i></button>
-      <button title="Previous frame" aria-label="Previous frame" onclick="anim31de08d4976e424bb1a0b339ebc1ac3b.previous_frame()">
+      <button title="Previous frame" aria-label="Previous frame" onclick="anim5afb01d53e5d41f0a26055f197ab0dff.previous_frame()">
           <i class="fa fa-step-backward"></i></button>
-      <button title="Play backwards" aria-label="Play backwards" onclick="anim31de08d4976e424bb1a0b339ebc1ac3b.reverse_animation()">
+      <button title="Play backwards" aria-label="Play backwards" onclick="anim5afb01d53e5d41f0a26055f197ab0dff.reverse_animation()">
           <i class="fa fa-play fa-flip-horizontal"></i></button>
-      <button title="Pause" aria-label="Pause" onclick="anim31de08d4976e424bb1a0b339ebc1ac3b.pause_animation()">
+      <button title="Pause" aria-label="Pause" onclick="anim5afb01d53e5d41f0a26055f197ab0dff.pause_animation()">
           <i class="fa fa-pause"></i></button>
-      <button title="Play" aria-label="Play" onclick="anim31de08d4976e424bb1a0b339ebc1ac3b.play_animation()">
+      <button title="Play" aria-label="Play" onclick="anim5afb01d53e5d41f0a26055f197ab0dff.play_animation()">
           <i class="fa fa-play"></i></button>
-      <button title="Next frame" aria-label="Next frame" onclick="anim31de08d4976e424bb1a0b339ebc1ac3b.next_frame()">
+      <button title="Next frame" aria-label="Next frame" onclick="anim5afb01d53e5d41f0a26055f197ab0dff.next_frame()">
           <i class="fa fa-step-forward"></i></button>
-      <button title="Last frame" aria-label="Last frame" onclick="anim31de08d4976e424bb1a0b339ebc1ac3b.last_frame()">
+      <button title="Last frame" aria-label="Last frame" onclick="anim5afb01d53e5d41f0a26055f197ab0dff.last_frame()">
           <i class="fa fa-fast-forward"></i></button>
-      <button title="Increase speed" aria-label="Increase speed" onclick="anim31de08d4976e424bb1a0b339ebc1ac3b.faster()">
+      <button title="Increase speed" aria-label="Increase speed" onclick="anim5afb01d53e5d41f0a26055f197ab0dff.faster()">
           <i class="fa fa-plus"></i></button>
     </div>
-    <form title="Repetition mode" aria-label="Repetition mode" action="#n" name="_anim_loop_select31de08d4976e424bb1a0b339ebc1ac3b"
+    <form title="Repetition mode" aria-label="Repetition mode" action="#n" name="_anim_loop_select5afb01d53e5d41f0a26055f197ab0dff"
           class="anim-state">
-      <input type="radio" name="state" value="once" id="_anim_radio1_31de08d4976e424bb1a0b339ebc1ac3b"
+      <input type="radio" name="state" value="once" id="_anim_radio1_5afb01d53e5d41f0a26055f197ab0dff"
              >
-      <label for="_anim_radio1_31de08d4976e424bb1a0b339ebc1ac3b">Once</label>
-      <input type="radio" name="state" value="loop" id="_anim_radio2_31de08d4976e424bb1a0b339ebc1ac3b"
+      <label for="_anim_radio1_5afb01d53e5d41f0a26055f197ab0dff">Once</label>
+      <input type="radio" name="state" value="loop" id="_anim_radio2_5afb01d53e5d41f0a26055f197ab0dff"
              checked>
-      <label for="_anim_radio2_31de08d4976e424bb1a0b339ebc1ac3b">Loop</label>
-      <input type="radio" name="state" value="reflect" id="_anim_radio3_31de08d4976e424bb1a0b339ebc1ac3b"
+      <label for="_anim_radio2_5afb01d53e5d41f0a26055f197ab0dff">Loop</label>
+      <input type="radio" name="state" value="reflect" id="_anim_radio3_5afb01d53e5d41f0a26055f197ab0dff"
              >
-      <label for="_anim_radio3_31de08d4976e424bb1a0b339ebc1ac3b">Reflect</label>
+      <label for="_anim_radio3_5afb01d53e5d41f0a26055f197ab0dff">Reflect</label>
     </form>
   </div>
 </div>
@@ -611,9 +610,9 @@ input[type=range].anim-slider {
   /* Instantiate the Animation class. */
   /* The IDs given should match those used in the template above. */
   (function() {
-    var img_id = "_anim_img31de08d4976e424bb1a0b339ebc1ac3b";
-    var slider_id = "_anim_slider31de08d4976e424bb1a0b339ebc1ac3b";
-    var loop_select_id = "_anim_loop_select31de08d4976e424bb1a0b339ebc1ac3b";
+    var img_id = "_anim_img5afb01d53e5d41f0a26055f197ab0dff";
+    var slider_id = "_anim_slider5afb01d53e5d41f0a26055f197ab0dff";
+    var loop_select_id = "_anim_loop_select5afb01d53e5d41f0a26055f197ab0dff";
     var frames = new Array(50);
 
   frames[0] = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAbAAAAEgCAYAAADVKCZpAAAAOXRFWHRTb2Z0d2FyZQBNYXRwbG90\
@@ -8597,12 +8596,13 @@ RETEl/4fPZ3FlvtZmgoAAAAASUVORK5CYII=\
     /* set a timeout to make sure all the above elements are created before
        the object is initialized. */
     setTimeout(function() {
-        anim31de08d4976e424bb1a0b339ebc1ac3b = new Animation(frames, img_id, slider_id, 50.0,
+        anim5afb01d53e5d41f0a26055f197ab0dff = new Animation(frames, img_id, slider_id, 50.0,
                                  loop_select_id);
     }, 0);
   })()
 </script>
 </div></div>
+</div>
 </div>
 
     <script type="text/x-thebe-config">
