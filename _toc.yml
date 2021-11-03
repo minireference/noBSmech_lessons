@@ -9,6 +9,7 @@ sections:
   - file: tutorials/Mechanics
 - file: missions/intro
   sections:
+  - file: missions/intro
   - file: missions/interception
 - file: sample_content/intro
   sections:
