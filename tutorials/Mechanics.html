@@ -1,0 +1,794 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mechanics &#8212; No Bullshit Mechanics Lessons</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet" />
+  <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.1c5a1a01449ed65a7b51.js">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
+        const thebe_selector = ".thebe,.cell"
+        const thebe_selector_input = "pre,.cell_input div.highlight"
+        const thebe_selector_output = ".output,.cell_output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Missions" href="../missions/intro.html" />
+    <link rel="prev" title="Tutorials" href="intro.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">No Bullshit Mechanics Lessons</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../home.html">
+   No Bullshit Mechanics Lessons
+  </a>
+ </li>
+</ul>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="intro.html">
+   Tutorials
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     Mechanics
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../missions/intro.html">
+   Missions
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="simple">
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../sample_content/intro.html">
+   Content in Jupyter Book
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../sample_content/markdown.html">
+     Markdown Files
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../sample_content/notebooks.html">
+     Content with notebooks
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/tutorials/Mechanics.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/minireference/noBSmech_lessons"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/minireference/noBSmech_lessons/issues/new?title=Issue%20on%20page%20%2Ftutorials/Mechanics.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/minireference/noBSmech_lessons/main?urlpath=tree/./tutorials/Mechanics.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="../_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        <button type="button" class="btn btn-secondary topbarbtn"
+            onclick="initThebeSBT()" title="Launch Thebe" data-toggle="tooltip" data-placement="left"><i
+                class="fas fa-play"></i><span style="margin-left: .4em;">Live Code</span></button>
+        
+    </div>
+</div>
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#dynamics">
+   Dynamics
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#kinematics">
+   Kinematics
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#uniform-acceleration-motion-uam">
+   Uniform acceleration motion (UAM)
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#example">
+     Example
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#general-equations-of-motion">
+   General equations of motion
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#potential-energy">
+   Potential energy
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#simple-harmonic-motion">
+   Simple harmonic motion
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#conservation-of-energy">
+   Conservation of energy
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sympy</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">z</span><span class="p">,</span> <span class="n">t</span> <span class="o">=</span> <span class="n">symbols</span><span class="p">(</span><span class="s1">&#39;x y z t&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="mechanics">
+<h1>Mechanics<a class="headerlink" href="#mechanics" title="Permalink to this headline">¶</a></h1>
+<p>The module called <a class="reference external" href="http://pyvideo.org/video/2653/dynamics-and-control-with-python"><code class="docutils literal notranslate"><span class="pre">sympy.physics.mechanics</span></code></a>
+contains elaborate tools for describing mechanical systems,
+manipulating reference frames, forces, and torques.
+These specialized functions are not necessary for a first-year mechanics course.
+The basic <code class="docutils literal notranslate"><span class="pre">SymPy</span></code> functions like <code class="docutils literal notranslate"><span class="pre">solve</span></code>,
+and the vector operations you learned in the previous sections are powerful enough for basic Newtonian mechanics.</p>
+<div class="section" id="dynamics">
+<h2>Dynamics<a class="headerlink" href="#dynamics" title="Permalink to this headline">¶</a></h2>
+<p>The net force acting on an object is the sum of all the external forces acting on it <span class="math">\vec{F}_{\textrm{net}} = \sum \vec{F}</span>.
+Since forces are vectors,
+we need to use vector addition to compute the net force.</p>
+<p>Compute
+<span class="math">\vec{F}_{\textrm{net}}=\vec{F}_1 + \vec{F}_2</span>,
+where <span class="math">\vec{F}_1=4\hat{\imath}[\mathrm{N}]</span> and <span class="math">\vec{F}_2 = 5\angle 30^\circ[\mathrm{N}]</span>:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">F_1</span> <span class="o">=</span>  <span class="n">Matrix</span><span class="p">(</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span> <span class="p">)</span> 
+<span class="n">F_2</span> <span class="o">=</span>  <span class="n">Matrix</span><span class="p">(</span> <span class="p">[</span><span class="mi">5</span><span class="o">*</span><span class="n">cos</span><span class="p">(</span><span class="mi">30</span><span class="o">*</span><span class="n">pi</span><span class="o">/</span><span class="mi">180</span><span class="p">),</span> <span class="mi">5</span><span class="o">*</span><span class="n">sin</span><span class="p">(</span><span class="mi">30</span><span class="o">*</span><span class="n">pi</span><span class="o">/</span><span class="mi">180</span><span class="p">)</span> <span class="p">]</span> <span class="p">)</span>
+<span class="n">F_net</span> <span class="o">=</span> <span class="n">F_1</span> <span class="o">+</span> <span class="n">F_2</span>
+<span class="n">F_net</span>                                    <span class="c1"># in Newtons</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_latex math">
+<p><span class="math">\displaystyle \left[\begin{matrix}4 + \frac{5 \sqrt{3}}{2}\\\frac{5}{2}\end{matrix}\right]</span></p>
+</div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">F_net</span><span class="o">.</span><span class="n">evalf</span><span class="p">()</span>                            <span class="c1"># in Newtons</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_latex math">
+<p><span class="math">\displaystyle \left[\begin{matrix}8.33012701892219\\2.5\end{matrix}\right]</span></p>
+</div></div>
+</div>
+<p>To express the answer in length-and-direction notation,
+use <code class="docutils literal notranslate"><span class="pre">norm</span></code> to find the length of <span class="math">\vec{F}_{\textrm{net}}</span>
+and <code class="docutils literal notranslate"><span class="pre">atan2</span></code> (The function <code class="docutils literal notranslate"><span class="pre">atan2(y,x)</span></code> computes the correct direction
+for all vectors <span class="math">(x,y)</span>, unlike <code class="docutils literal notranslate"><span class="pre">atan(y/x)</span></code> which requires corrections for angles in the range <span class="math">[\frac{\pi}{2}, \frac{3\pi}{2}]</span>.) to find its direction:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">F_net</span><span class="o">.</span><span class="n">norm</span><span class="p">()</span><span class="o">.</span><span class="n">evalf</span><span class="p">()</span>                     <span class="c1"># |F_net| in [N]</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_latex math">
+<p><span class="math">\displaystyle 8.69718438067042</span></p>
+</div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="n">atan2</span><span class="p">(</span> <span class="n">F_net</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span><span class="n">F_net</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="p">)</span><span class="o">*</span><span class="mi">180</span><span class="o">/</span><span class="n">pi</span><span class="p">)</span><span class="o">.</span><span class="n">n</span><span class="p">()</span>  <span class="c1"># angle in degrees</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_latex math">
+<p><span class="math">\displaystyle 16.70531380601</span></p>
+</div></div>
+</div>
+<p>The net force on the object is <span class="math">\vec{F}_{\textrm{net}}= 8.697\angle 16.7^\circ</span>[N].</p>
+</div>
+<div class="section" id="kinematics">
+<h2>Kinematics<a class="headerlink" href="#kinematics" title="Permalink to this headline">¶</a></h2>
+<p>Let <span class="math">x(t)</span> denote the position of an object,
+<span class="math">v(t)</span> denote its velocity,
+and <span class="math">a(t)</span> denote its acceleration.
+Together <span class="math">x(t)</span>, <span class="math">v(t)</span>, and <span class="math">a(t)</span> are known as the <em>equations of motion</em> of the object.</p>
+<p>The equations of motion are related by the derivative operation:</p>
+<div class="math">
+<p><span class="math">a(t) \overset{\frac{d}{dt} }{\longleftarrow} v(t) \overset{\frac{d}{dt} }{\longleftarrow} x(t).</span></p>
+</div><p>Assume we know the initial position <span class="math">x_i\equiv x(0)</span> and the initial velocity <span class="math">v_i\equiv v(0)</span> of the object
+and we want to find <span class="math">x(t)</span> for all later times.
+We can do this starting from the dynamics of the problem—the forces acting on the object.</p>
+<p>Newton’s second law <span class="math">\vec{F}_{\textrm{net}} = m\vec{a}</span> states that a net force <span class="math">\vec{F}_{\textrm{net}}</span>
+applied on an object of mass <span class="math">m</span> produces acceleration <span class="math">\vec{a}</span>.
+Thus, we can obtain an objects acceleration if we know the net force acting on it.</p>
+<p>Starting from the knowledge of <span class="math">a(t)</span>, we can obtain <span class="math">v(t)</span> by integrating
+then find <span class="math">x(t)</span> by integrating <span class="math">v(t)</span>:</p>
+<div class="math">
+<p><span class="math">a(t) \ \ \ \overset{v_i+ \int\!dt }{\longrightarrow} \ \ \ v(t) \ \ \ \overset{x_i+ \int\!dt }{\longrightarrow} \ \ \ x(t).</span></p>
+</div><p>The reasoning follows from the fundamental theorem of calculus:
+if <span class="math">a(t)</span> represents the change in <span class="math">v(t)</span>,
+then the total of <span class="math">a(t)</span> accumulated between <span class="math">t=t_1</span> and <span class="math">t=t_2</span>
+is equal to the total change in <span class="math">v(t)</span> between these times: <span class="math">\Delta v = v(t_2) - v(t_1)</span>.
+Similarly, the integral of <span class="math">v(t)</span> from <span class="math">t=0</span> until <span class="math">t=\tau</span> is equal to <span class="math">x(\tau) - x(0)</span>.</p>
+</div>
+<div class="section" id="uniform-acceleration-motion-uam">
+<h2>Uniform acceleration motion (UAM)<a class="headerlink" href="#uniform-acceleration-motion-uam" title="Permalink to this headline">¶</a></h2>
+<p>Let’s analyze the case where the net force on the object is constant.
+A constant force causes a constant acceleration <span class="math">a = \frac{F}{m} = \textrm{constant}</span>.
+If the acceleration function is constant over time <span class="math">a(t)=a</span>.
+We find <span class="math">v(t)</span> and <span class="math">x(t)</span> as follows:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">t</span><span class="p">,</span> <span class="n">a</span><span class="p">,</span> <span class="n">v_i</span><span class="p">,</span> <span class="n">x_i</span> <span class="o">=</span> <span class="n">symbols</span><span class="p">(</span><span class="s1">&#39;t a v_i x_i&#39;</span><span class="p">)</span>
+<span class="n">v</span> <span class="o">=</span> <span class="n">v_i</span> <span class="o">+</span> <span class="n">integrate</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span><span class="n">t</span><span class="p">)</span> <span class="p">)</span>
+<span class="n">v</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_latex math">
+<p><span class="math">\displaystyle a t + v_{i}</span></p>
+</div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="n">x_i</span> <span class="o">+</span> <span class="n">integrate</span><span class="p">(</span><span class="n">v</span><span class="p">,</span> <span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span><span class="n">t</span><span class="p">)</span> <span class="p">)</span>
+<span class="n">x</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_latex math">
+<p><span class="math">\displaystyle \frac{a t^{2}}{2} + t v_{i} + x_{i}</span></p>
+</div></div>
+</div>
+<p>You may remember these equations from your high school physics class.
+They are the <em>uniform accelerated motion</em> (UAM) equations:</p>
+<div class="amsmath math">
+<p><span class="math">\begin{align*}
+ a(t) &amp;= a,                                  \\ 
+ v(t) &amp;= v_i  + at,                          \\[-2mm] 
+ x(t) &amp;= x_i + v_it + \frac{1}{2}at^2.
+\end{align*}</span></p>
+</div><p>In high school, you probably had to memorize these equations.
+Now you know how to derive them yourself starting from first principles.</p>
+<p>For the sake of completeness, we’ll now derive the fourth UAM equation,
+which relates the object’s final velocity to the initial velocity,
+the displacement, and the acceleration, without reference to time:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="n">v</span><span class="o">*</span><span class="n">v</span><span class="p">)</span><span class="o">.</span><span class="n">expand</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_latex math">
+<p><span class="math">\displaystyle a^{2} t^{2} + 2 a t v_{i} + v_{i}^{2}</span></p>
+</div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="p">((</span><span class="n">v</span><span class="o">*</span><span class="n">v</span><span class="p">)</span><span class="o">.</span><span class="n">expand</span><span class="p">()</span> <span class="o">-</span> <span class="mi">2</span><span class="o">*</span><span class="n">a</span><span class="o">*</span><span class="n">x</span><span class="p">)</span><span class="o">.</span><span class="n">simplify</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_latex math">
+<p><span class="math">\displaystyle - 2 a x_{i} + v_{i}^{2}</span></p>
+</div></div>
+</div>
+<p>The above calculation shows <span class="math">v_f^2 - 2ax_f = -2ax_i + v_i^2</span>.
+After moving the term <span class="math">2ax_f</span> to the other side of the equation, we obtain</p>
+<div class="amsmath math">
+<p><span class="math">\begin{align*}
+ (v(t))^2 \ = \ v_f^2 =  v_i^2  + 2a\Delta x \ = \  v_i^2  + 2a(x_f-x_i).
+\end{align*}</span></p>
+</div><p>The fourth equation is important for practical purposes
+because it allows us to solve physics problems in a time-less manner.</p>
+<div class="section" id="example">
+<h3>Example<a class="headerlink" href="#example" title="Permalink to this headline">¶</a></h3>
+<p>Find the position function of an object at time <span class="math">t=3[\mathrm{s}]</span>,
+if it starts from <span class="math">x_i=20[\mathrm{m}]</span> with <span class="math">v_i=10[\mathrm{m/s}]</span> and undergoes
+a constant acceleration of <span class="math">a=5[\mathrm{m/s^2}]</span>.
+What is the object’s velocity at <span class="math">t=3[\mathrm{s}]</span>?</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">x_i</span> <span class="o">=</span> <span class="mi">20</span>  <span class="c1"># initial position</span>
+<span class="n">v_i</span> <span class="o">=</span> <span class="mi">10</span>  <span class="c1"># initial velocity</span>
+<span class="n">a</span>   <span class="o">=</span> <span class="mi">5</span>   <span class="c1"># acceleration (constant during motion)</span>
+<span class="n">x</span> <span class="o">=</span> <span class="n">x_i</span> <span class="o">+</span> <span class="n">integrate</span><span class="p">(</span> <span class="n">v_i</span><span class="o">+</span><span class="n">integrate</span><span class="p">(</span><span class="n">a</span><span class="p">,(</span><span class="n">t</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="n">t</span><span class="p">)),</span> <span class="p">(</span><span class="n">t</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="n">t</span><span class="p">)</span> <span class="p">)</span>   
+<span class="n">x</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_latex math">
+<p><span class="math">\displaystyle \frac{5 t^{2}}{2} + 10 t + 20</span></p>
+</div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">x</span><span class="o">.</span><span class="n">subs</span><span class="p">({</span><span class="n">t</span><span class="p">:</span><span class="mi">3</span><span class="p">})</span><span class="o">.</span><span class="n">n</span><span class="p">()</span>          <span class="c1"># x(3) in [m]</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_latex math">
+<p><span class="math">\displaystyle 72.5</span></p>
+</div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">diff</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">t</span><span class="p">)</span><span class="o">.</span><span class="n">subs</span><span class="p">({</span><span class="n">t</span><span class="p">:</span><span class="mi">3</span><span class="p">})</span><span class="o">.</span><span class="n">n</span><span class="p">()</span>  <span class="c1"># v(3) in [m/s]</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_latex math">
+<p><span class="math">\displaystyle 25.0</span></p>
+</div></div>
+</div>
+<p>If you think about it,
+physics knowledge combined with computer skills is like a superpower!</p>
+</div>
+</div>
+<div class="section" id="general-equations-of-motion">
+<h2>General equations of motion<a class="headerlink" href="#general-equations-of-motion" title="Permalink to this headline">¶</a></h2>
+<p>The procedure
+<span class="math">a(t) \ \overset{v_i+ \int\!dt }{\longrightarrow} \ v(t) \ \overset{x_i+ \int\!dt }{\longrightarrow} \ x(t)</span>
+can be used to obtain the position function <span class="math">x(t)</span> even when the acceleration is not constant.
+Suppose the acceleration of an object is <span class="math">a(t)=\sqrt{k t}</span>;
+what is its <span class="math">x(t)</span>?</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">t</span><span class="p">,</span> <span class="n">v_i</span><span class="p">,</span> <span class="n">x_i</span><span class="p">,</span> <span class="n">k</span> <span class="o">=</span> <span class="n">symbols</span><span class="p">(</span><span class="s1">&#39;t v_i x_i k&#39;</span><span class="p">)</span>
+<span class="n">a</span> <span class="o">=</span> <span class="n">sqrt</span><span class="p">(</span><span class="n">k</span><span class="o">*</span><span class="n">t</span><span class="p">)</span>
+<span class="n">x</span> <span class="o">=</span> <span class="n">x_i</span> <span class="o">+</span> <span class="n">integrate</span><span class="p">(</span> <span class="n">v_i</span><span class="o">+</span><span class="n">integrate</span><span class="p">(</span><span class="n">a</span><span class="p">,(</span><span class="n">t</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="n">t</span><span class="p">)),</span> <span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span><span class="n">t</span><span class="p">)</span> <span class="p">)</span>
+<span class="n">x</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_latex math">
+<p><span class="math">\displaystyle t v_{i} + x_{i} + \frac{4 \left(k t\right)^{\frac{5}{2}}}{15 k^{2}}</span></p>
+</div></div>
+</div>
+</div>
+<div class="section" id="potential-energy">
+<h2>Potential energy<a class="headerlink" href="#potential-energy" title="Permalink to this headline">¶</a></h2>
+<p>Instead of working with the kinematic equations of motion <span class="math">x(t)</span>, <span class="math">v(t)</span>, and <span class="math">a(t)</span> which depend on time,
+we can solve physics problems using <em>energy</em> calculations.
+A key connection between the world of forces and the world of energy is the concept of <em>potential energy</em>.
+If you move an object against a conservative force (think raising a ball in the air against the force of gravity),
+you can think of the work you do agains the force as being stored in the potential energy of the object.</p>
+<p>For each force <span class="math">\vec{F}(x)</span> there is a corresponding potential energy <span class="math">U_F(x)</span>.
+The change in potential energy associated with the force <span class="math">\vec{F}(x)</span> and displacement <span class="math">\vec{d}</span>
+is defined as the negative of the work done by the force during the displacement: <span class="math">U_F(x) = - W = - \int_{\vec{d}} \vec{F}(x)\cdot d\vec{x}</span>.</p>
+<p>The potential energies associated with gravity <span class="math">\vec{F}_g = -mg\hat{\jmath}</span>
+and the force of a spring <span class="math">\vec{F}_s = -k\vec{x}</span> are calculated as follows:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">x</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="n">symbols</span><span class="p">(</span><span class="s1">&#39;x y&#39;</span><span class="p">)</span>
+<span class="n">m</span><span class="p">,</span> <span class="n">g</span><span class="p">,</span> <span class="n">k</span><span class="p">,</span> <span class="n">h</span> <span class="o">=</span> <span class="n">symbols</span><span class="p">(</span><span class="s1">&#39;m g k h&#39;</span><span class="p">)</span>
+<span class="n">F_g</span> <span class="o">=</span> <span class="o">-</span><span class="n">m</span><span class="o">*</span><span class="n">g</span>  <span class="c1"># Force of gravity on mass m </span>
+<span class="n">U_g</span> <span class="o">=</span> <span class="o">-</span> <span class="n">integrate</span><span class="p">(</span> <span class="n">F_g</span><span class="p">,</span> <span class="p">(</span><span class="n">y</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="n">h</span><span class="p">)</span> <span class="p">)</span>
+<span class="n">U_g</span>         <span class="c1"># Grav. potential energy</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_latex math">
+<p><span class="math">\displaystyle g h m</span></p>
+</div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">F_s</span> <span class="o">=</span> <span class="o">-</span><span class="n">k</span><span class="o">*</span><span class="n">x</span>  <span class="c1"># Spring force for displacement x </span>
+<span class="n">U_s</span> <span class="o">=</span> <span class="o">-</span> <span class="n">integrate</span><span class="p">(</span> <span class="n">F_s</span><span class="p">,</span> <span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="n">x</span><span class="p">)</span> <span class="p">)</span>
+<span class="n">U_s</span>         <span class="c1"># Spring potential energy</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_latex math">
+<p><span class="math">\displaystyle \frac{k x^{2}}{2}</span></p>
+</div></div>
+</div>
+<p>Note the negative sign in the formula defining the potential energy.
+This negative is canceled by the negative sign of the dot product <span class="math">\vec{F}\cdot d\vec{x}</span>:
+when the force acts in the direction opposite to the displacement,
+the work done by the force is negative.</p>
+</div>
+<div class="section" id="simple-harmonic-motion">
+<h2>Simple harmonic motion<a class="headerlink" href="#simple-harmonic-motion" title="Permalink to this headline">¶</a></h2>
+<p>The force exerted by a spring is given by the formula <span class="math">F=-kx</span>.
+If the only force acting on a mass <span class="math">m</span> is the force of a spring,
+we can use Newton’s second law to obtain the following equation:</p>
+<div class="math">
+<p><span class="math">F=ma  
+  \quad \Rightarrow \quad
+  -kx = ma   
+  \quad \Rightarrow \quad
+  -kx(t) = m\frac{d^2}{dt^2}\Big[x(t)\Big].</span></p>
+</div><p>The motion of a mass-spring system is described by the <em>differential equation</em> <span class="math">\frac{d^2}{dt^2}x(t) + \omega^2 x(t)=0</span>,
+where the constant <span class="math">\omega = \sqrt{\frac{k}{m}}</span> is called the angular frequency.
+We can find the position function <span class="math">x(t)</span> using the <code class="docutils literal notranslate"><span class="pre">dsolve</span></code> method:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">t</span> <span class="o">=</span> <span class="n">Symbol</span><span class="p">(</span><span class="s1">&#39;t&#39;</span><span class="p">)</span>                 <span class="c1"># time t</span>
+<span class="n">x</span> <span class="o">=</span> <span class="n">Function</span><span class="p">(</span><span class="s1">&#39;x&#39;</span><span class="p">)</span>               <span class="c1"># position function x(t)</span>
+<span class="n">w</span> <span class="o">=</span> <span class="n">Symbol</span><span class="p">(</span><span class="s1">&#39;w&#39;</span><span class="p">,</span> <span class="n">positive</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>  <span class="c1"># angular frequency w</span>
+<span class="n">sol</span> <span class="o">=</span> <span class="n">dsolve</span><span class="p">(</span> <span class="n">diff</span><span class="p">(</span><span class="n">x</span><span class="p">(</span><span class="n">t</span><span class="p">),</span><span class="n">t</span><span class="p">,</span><span class="n">t</span><span class="p">)</span> <span class="o">+</span> <span class="n">w</span><span class="o">**</span><span class="mi">2</span><span class="o">*</span><span class="n">x</span><span class="p">(</span><span class="n">t</span><span class="p">),</span> <span class="n">x</span><span class="p">(</span><span class="n">t</span><span class="p">)</span> <span class="p">)</span>
+<span class="n">sol</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_latex math">
+<p><span class="math">\displaystyle x{\left(t \right)} = C_{1} \sin{\left(t w \right)} + C_{2} \cos{\left(t w \right)}</span></p>
+</div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="n">sol</span><span class="o">.</span><span class="n">rhs</span>           
+<span class="n">x</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_latex math">
+<p><span class="math">\displaystyle C_{1} \sin{\left(t w \right)} + C_{2} \cos{\left(t w \right)}</span></p>
+</div></div>
+</div>
+<p>Note the solution <span class="math">x(t)=C_1\sin(\omega t)+C_2 \cos(\omega t)</span> is equivalent to <span class="math">x(t) = A\cos(\omega t + \phi)</span>,
+which is more commonly used to describe simple harmonic motion.
+We can use the <code class="docutils literal notranslate"><span class="pre">expand</span></code> function with the argument <code class="docutils literal notranslate"><span class="pre">trig=True</span></code> to convince ourselves of this equivalence:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">A</span><span class="p">,</span> <span class="n">phi</span> <span class="o">=</span> <span class="n">symbols</span><span class="p">(</span><span class="s2">&quot;A phi&quot;</span><span class="p">)</span>
+<span class="p">(</span><span class="n">A</span><span class="o">*</span><span class="n">cos</span><span class="p">(</span><span class="n">w</span><span class="o">*</span><span class="n">t</span> <span class="o">-</span> <span class="n">phi</span><span class="p">))</span><span class="o">.</span><span class="n">expand</span><span class="p">(</span><span class="n">trig</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_latex math">
+<p><span class="math">\displaystyle A \sin{\left(\phi \right)} \sin{\left(t w \right)} + A \cos{\left(\phi \right)} \cos{\left(t w \right)}</span></p>
+</div></div>
+</div>
+<p>If we define <span class="math">C_1=A\sin(\phi)</span> and <span class="math">C_2=A\cos(\phi)</span>,
+we obtain the form <span class="math">x(t)=C_1\sin(\omega t)+C_2 \cos(\omega t)</span> that <code class="docutils literal notranslate"><span class="pre">SymPy</span></code> found.</p>
+</div>
+<div class="section" id="conservation-of-energy">
+<h2>Conservation of energy<a class="headerlink" href="#conservation-of-energy" title="Permalink to this headline">¶</a></h2>
+<p>We can verify that the total energy of the mass-spring system is conserved by showing
+<span class="math">E_T(t) = U_s(t) + K(t) = \textrm{constant}</span>:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="n">sol</span><span class="o">.</span><span class="n">rhs</span><span class="o">.</span><span class="n">subs</span><span class="p">({</span><span class="s2">&quot;C1&quot;</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span><span class="s2">&quot;C2&quot;</span><span class="p">:</span><span class="n">A</span><span class="p">})</span> 
+<span class="n">x</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_latex math">
+<p><span class="math">\displaystyle A \cos{\left(t w \right)}</span></p>
+</div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">v</span> <span class="o">=</span> <span class="n">diff</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">t</span><span class="p">)</span>
+<span class="n">v</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_latex math">
+<p><span class="math">\displaystyle - A w \sin{\left(t w \right)}</span></p>
+</div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">E_T</span> <span class="o">=</span> <span class="p">(</span><span class="mf">0.5</span><span class="o">*</span><span class="n">k</span><span class="o">*</span><span class="n">x</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="mf">0.5</span><span class="o">*</span><span class="n">m</span><span class="o">*</span><span class="n">v</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span><span class="o">.</span><span class="n">simplify</span><span class="p">()</span>
+<span class="n">E_T</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_latex math">
+<p><span class="math">\displaystyle 0.5 A^{2} \left(k \cos^{2}{\left(t w \right)} + m w^{2} \sin^{2}{\left(t w \right)}\right)</span></p>
+</div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">E_T</span><span class="o">.</span><span class="n">subs</span><span class="p">({</span><span class="n">k</span><span class="p">:</span><span class="n">m</span><span class="o">*</span><span class="n">w</span><span class="o">**</span><span class="mi">2</span><span class="p">})</span><span class="o">.</span><span class="n">simplify</span><span class="p">()</span>     <span class="c1"># = K_max</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_latex math">
+<p><span class="math">\displaystyle 0.5 A^{2} m w^{2}</span></p>
+</div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">E_T</span><span class="o">.</span><span class="n">subs</span><span class="p">({</span><span class="n">w</span><span class="p">:</span><span class="n">sqrt</span><span class="p">(</span><span class="n">k</span><span class="o">/</span><span class="n">m</span><span class="p">)})</span><span class="o">.</span><span class="n">simplify</span><span class="p">()</span>  <span class="c1"># = U_max</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_latex math">
+<p><span class="math">\displaystyle 0.5 A^{2} k</span></p>
+</div></div>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "minireference/noBSmech_lessons",
+            ref: "main",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./tutorials"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+            
+
+
+
+<div class='prev-next-bottom'>
+    
+    <div id="prev">
+        <a class="left-prev" href="intro.html" title="previous page">
+            <i class="prevnext-label fas fa-angle-left"></i>
+            <div class="prevnext-info">
+                <p class="prevnext-label">previous</p>
+                <p class="prevnext-title">Tutorials</p>
+            </div>
+        </a>
+    </div>
+     <div id="next">
+        <a class="right-next" href="../missions/intro.html" title="next page">
+            <div class="prevnext-info">
+                <p class="prevnext-label">next</p>
+                <p class="prevnext-title">Missions</p>
+            </div>
+            <i class="prevnext-label fas fa-angle-right"></i>
+        </a>
+     </div>
+
+</div>
+        
+        </div>
+    </div>
+    <footer class="footer">
+    <div class="container">
+      <p>
+        
+          By Ivan Savov<br/>
+        
+            &copy; Copyright 2021.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+
+  
+  </body>
+</html>
