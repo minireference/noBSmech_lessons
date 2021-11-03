@@ -2,9 +2,15 @@
 # Learn more at https://jupyterbook.org/customize/toc.html
 
 format: jb-article
-root: intro
+root: home
 sections:
-- file: content
+- file: tutorials/intro
   sections:
-  - file: markdown
-  - file: notebooks
+  - file: tutorials/Mechanics
+- file: missions/intro
+  sections:
+  - file: missions/interception
+- file: sample_content/intro
+  sections:
+  - file: sample_content/markdown
+  - file: sample_content/notebooks
