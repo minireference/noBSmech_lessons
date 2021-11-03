@@ -1,4 +1,14 @@
+# jupyter lab
+jupyterlab
+jupyter
+
+# jupyter book
 jupyter-book
+ghp-import
+
+# science
 matplotlib
 numpy
-ghp-import
+scipy
+sympy
+seaborn
