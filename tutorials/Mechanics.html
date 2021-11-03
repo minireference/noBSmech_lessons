@@ -42,6 +42,8 @@
     <script src="../_static/copybutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
     <script>
         const thebe_selector = ".thebe,.cell"
@@ -323,12 +325,12 @@ The basic <code class="docutils literal notranslate"><span class="pre">SymPy</sp
 and the vector operations you learned in the previous sections are powerful enough for basic Newtonian mechanics.</p>
 <div class="section" id="dynamics">
 <h2>Dynamics<a class="headerlink" href="#dynamics" title="Permalink to this headline">¶</a></h2>
-<p>The net force acting on an object is the sum of all the external forces acting on it <span class="math">\vec{F}_{\textrm{net}} = \sum \vec{F}</span>.
+<p>The net force acting on an object is the sum of all the external forces acting on it <span class="math notranslate nohighlight">\(\vec{F}_{\textrm{net}} = \sum \vec{F}\)</span>.
 Since forces are vectors,
 we need to use vector addition to compute the net force.</p>
 <p>Compute
-<span class="math">\vec{F}_{\textrm{net}}=\vec{F}_1 + \vec{F}_2</span>,
-where <span class="math">\vec{F}_1=4\hat{\imath}[\mathrm{N}]</span> and <span class="math">\vec{F}_2 = 5\angle 30^\circ[\mathrm{N}]</span>:</p>
+<span class="math notranslate nohighlight">\(\vec{F}_{\textrm{net}}=\vec{F}_1 + \vec{F}_2\)</span>,
+where <span class="math notranslate nohighlight">\(\vec{F}_1=4\hat{\imath}[\mathrm{N}]\)</span> and <span class="math notranslate nohighlight">\(\vec{F}_2 = 5\angle 30^\circ[\mathrm{N}]\)</span>:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">F_1</span> <span class="o">=</span>  <span class="n">Matrix</span><span class="p">(</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span> <span class="p">)</span> 
@@ -339,9 +341,9 @@ where <span class="math">\vec{F}_1=4\hat{\imath}[\mathrm{N}]</span> and <span cl
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_latex math">
-<p><span class="math">\displaystyle \left[\begin{matrix}4 + \frac{5 \sqrt{3}}{2}\\\frac{5}{2}\end{matrix}\right]</span></p>
-</div></div>
+<div class="output text_latex math notranslate nohighlight">
+\[\begin{split}\displaystyle \left[\begin{matrix}4 + \frac{5 \sqrt{3}}{2}\\\frac{5}{2}\end{matrix}\right]\end{split}\]</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -350,14 +352,14 @@ where <span class="math">\vec{F}_1=4\hat{\imath}[\mathrm{N}]</span> and <span cl
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_latex math">
-<p><span class="math">\displaystyle \left[\begin{matrix}8.33012701892219\\2.5\end{matrix}\right]</span></p>
-</div></div>
+<div class="output text_latex math notranslate nohighlight">
+\[\begin{split}\displaystyle \left[\begin{matrix}8.33012701892219\\2.5\end{matrix}\right]\end{split}\]</div>
+</div>
 </div>
 <p>To express the answer in length-and-direction notation,
-use <code class="docutils literal notranslate"><span class="pre">norm</span></code> to find the length of <span class="math">\vec{F}_{\textrm{net}}</span>
+use <code class="docutils literal notranslate"><span class="pre">norm</span></code> to find the length of <span class="math notranslate nohighlight">\(\vec{F}_{\textrm{net}}\)</span>
 and <code class="docutils literal notranslate"><span class="pre">atan2</span></code> (The function <code class="docutils literal notranslate"><span class="pre">atan2(y,x)</span></code> computes the correct direction
-for all vectors <span class="math">(x,y)</span>, unlike <code class="docutils literal notranslate"><span class="pre">atan(y/x)</span></code> which requires corrections for angles in the range <span class="math">[\frac{\pi}{2}, \frac{3\pi}{2}]</span>.) to find its direction:</p>
+for all vectors <span class="math notranslate nohighlight">\((x,y)\)</span>, unlike <code class="docutils literal notranslate"><span class="pre">atan(y/x)</span></code> which requires corrections for angles in the range <span class="math notranslate nohighlight">\([\frac{\pi}{2}, \frac{3\pi}{2}]\)</span>.) to find its direction:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">F_net</span><span class="o">.</span><span class="n">norm</span><span class="p">()</span><span class="o">.</span><span class="n">evalf</span><span class="p">()</span>                     <span class="c1"># |F_net| in [N]</span>
@@ -365,9 +367,9 @@ for all vectors <span class="math">(x,y)</span>, unlike <code class="docutils li
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_latex math">
-<p><span class="math">\displaystyle 8.69718438067042</span></p>
-</div></div>
+<div class="output text_latex math notranslate nohighlight">
+\[\displaystyle 8.69718438067042\]</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -376,43 +378,47 @@ for all vectors <span class="math">(x,y)</span>, unlike <code class="docutils li
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_latex math">
-<p><span class="math">\displaystyle 16.70531380601</span></p>
-</div></div>
+<div class="output text_latex math notranslate nohighlight">
+\[\displaystyle 16.70531380601\]</div>
 </div>
-<p>The net force on the object is <span class="math">\vec{F}_{\textrm{net}}= 8.697\angle 16.7^\circ</span>[N].</p>
+</div>
+<p>The net force on the object is <span class="math notranslate nohighlight">\(\vec{F}_{\textrm{net}}= 8.697\angle 16.7^\circ\)</span>[N].</p>
 </div>
 <div class="section" id="kinematics">
 <h2>Kinematics<a class="headerlink" href="#kinematics" title="Permalink to this headline">¶</a></h2>
-<p>Let <span class="math">x(t)</span> denote the position of an object,
-<span class="math">v(t)</span> denote its velocity,
-and <span class="math">a(t)</span> denote its acceleration.
-Together <span class="math">x(t)</span>, <span class="math">v(t)</span>, and <span class="math">a(t)</span> are known as the <em>equations of motion</em> of the object.</p>
+<p>Let <span class="math notranslate nohighlight">\(x(t)\)</span> denote the position of an object,
+<span class="math notranslate nohighlight">\(v(t)\)</span> denote its velocity,
+and <span class="math notranslate nohighlight">\(a(t)\)</span> denote its acceleration.
+Together <span class="math notranslate nohighlight">\(x(t)\)</span>, <span class="math notranslate nohighlight">\(v(t)\)</span>, and <span class="math notranslate nohighlight">\(a(t)\)</span> are known as the <em>equations of motion</em> of the object.</p>
 <p>The equations of motion are related by the derivative operation:</p>
-<div class="math">
-<p><span class="math">a(t) \overset{\frac{d}{dt} }{\longleftarrow} v(t) \overset{\frac{d}{dt} }{\longleftarrow} x(t).</span></p>
-</div><p>Assume we know the initial position <span class="math">x_i\equiv x(0)</span> and the initial velocity <span class="math">v_i\equiv v(0)</span> of the object
-and we want to find <span class="math">x(t)</span> for all later times.
+<div class="math notranslate nohighlight">
+\[
+  a(t) \overset{\frac{d}{dt} }{\longleftarrow} v(t) \overset{\frac{d}{dt} }{\longleftarrow} x(t).
+\]</div>
+<p>Assume we know the initial position <span class="math notranslate nohighlight">\(x_i\equiv x(0)\)</span> and the initial velocity <span class="math notranslate nohighlight">\(v_i\equiv v(0)\)</span> of the object
+and we want to find <span class="math notranslate nohighlight">\(x(t)\)</span> for all later times.
 We can do this starting from the dynamics of the problem—the forces acting on the object.</p>
-<p>Newton’s second law <span class="math">\vec{F}_{\textrm{net}} = m\vec{a}</span> states that a net force <span class="math">\vec{F}_{\textrm{net}}</span>
-applied on an object of mass <span class="math">m</span> produces acceleration <span class="math">\vec{a}</span>.
+<p>Newton’s second law <span class="math notranslate nohighlight">\(\vec{F}_{\textrm{net}} = m\vec{a}\)</span> states that a net force <span class="math notranslate nohighlight">\(\vec{F}_{\textrm{net}}\)</span>
+applied on an object of mass <span class="math notranslate nohighlight">\(m\)</span> produces acceleration <span class="math notranslate nohighlight">\(\vec{a}\)</span>.
 Thus, we can obtain an objects acceleration if we know the net force acting on it.</p>
-<p>Starting from the knowledge of <span class="math">a(t)</span>, we can obtain <span class="math">v(t)</span> by integrating
-then find <span class="math">x(t)</span> by integrating <span class="math">v(t)</span>:</p>
-<div class="math">
-<p><span class="math">a(t) \ \ \ \overset{v_i+ \int\!dt }{\longrightarrow} \ \ \ v(t) \ \ \ \overset{x_i+ \int\!dt }{\longrightarrow} \ \ \ x(t).</span></p>
-</div><p>The reasoning follows from the fundamental theorem of calculus:
-if <span class="math">a(t)</span> represents the change in <span class="math">v(t)</span>,
-then the total of <span class="math">a(t)</span> accumulated between <span class="math">t=t_1</span> and <span class="math">t=t_2</span>
-is equal to the total change in <span class="math">v(t)</span> between these times: <span class="math">\Delta v = v(t_2) - v(t_1)</span>.
-Similarly, the integral of <span class="math">v(t)</span> from <span class="math">t=0</span> until <span class="math">t=\tau</span> is equal to <span class="math">x(\tau) - x(0)</span>.</p>
+<p>Starting from the knowledge of <span class="math notranslate nohighlight">\(a(t)\)</span>, we can obtain <span class="math notranslate nohighlight">\(v(t)\)</span> by integrating
+then find <span class="math notranslate nohighlight">\(x(t)\)</span> by integrating <span class="math notranslate nohighlight">\(v(t)\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[
+a(t) \ \ \ \overset{v_i+ \int\!dt }{\longrightarrow} \ \ \ v(t) \ \ \ \overset{x_i+ \int\!dt }{\longrightarrow} \ \ \ x(t).
+\]</div>
+<p>The reasoning follows from the fundamental theorem of calculus:
+if <span class="math notranslate nohighlight">\(a(t)\)</span> represents the change in <span class="math notranslate nohighlight">\(v(t)\)</span>,
+then the total of <span class="math notranslate nohighlight">\(a(t)\)</span> accumulated between <span class="math notranslate nohighlight">\(t=t_1\)</span> and <span class="math notranslate nohighlight">\(t=t_2\)</span>
+is equal to the total change in <span class="math notranslate nohighlight">\(v(t)\)</span> between these times: <span class="math notranslate nohighlight">\(\Delta v = v(t_2) - v(t_1)\)</span>.
+Similarly, the integral of <span class="math notranslate nohighlight">\(v(t)\)</span> from <span class="math notranslate nohighlight">\(t=0\)</span> until <span class="math notranslate nohighlight">\(t=\tau\)</span> is equal to <span class="math notranslate nohighlight">\(x(\tau) - x(0)\)</span>.</p>
 </div>
 <div class="section" id="uniform-acceleration-motion-uam">
 <h2>Uniform acceleration motion (UAM)<a class="headerlink" href="#uniform-acceleration-motion-uam" title="Permalink to this headline">¶</a></h2>
 <p>Let’s analyze the case where the net force on the object is constant.
-A constant force causes a constant acceleration <span class="math">a = \frac{F}{m} = \textrm{constant}</span>.
-If the acceleration function is constant over time <span class="math">a(t)=a</span>.
-We find <span class="math">v(t)</span> and <span class="math">x(t)</span> as follows:</p>
+A constant force causes a constant acceleration <span class="math notranslate nohighlight">\(a = \frac{F}{m} = \textrm{constant}\)</span>.
+If the acceleration function is constant over time <span class="math notranslate nohighlight">\(a(t)=a\)</span>.
+We find <span class="math notranslate nohighlight">\(v(t)\)</span> and <span class="math notranslate nohighlight">\(x(t)\)</span> as follows:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">t</span><span class="p">,</span> <span class="n">a</span><span class="p">,</span> <span class="n">v_i</span><span class="p">,</span> <span class="n">x_i</span> <span class="o">=</span> <span class="n">symbols</span><span class="p">(</span><span class="s1">&#39;t a v_i x_i&#39;</span><span class="p">)</span>
@@ -422,9 +428,9 @@ We find <span class="math">v(t)</span> and <span class="math">x(t)</span> as fol
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_latex math">
-<p><span class="math">\displaystyle a t + v_{i}</span></p>
-</div></div>
+<div class="output text_latex math notranslate nohighlight">
+\[\displaystyle a t + v_{i}\]</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -434,19 +440,19 @@ We find <span class="math">v(t)</span> and <span class="math">x(t)</span> as fol
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_latex math">
-<p><span class="math">\displaystyle \frac{a t^{2}}{2} + t v_{i} + x_{i}</span></p>
-</div></div>
+<div class="output text_latex math notranslate nohighlight">
+\[\displaystyle \frac{a t^{2}}{2} + t v_{i} + x_{i}\]</div>
+</div>
 </div>
 <p>You may remember these equations from your high school physics class.
 They are the <em>uniform accelerated motion</em> (UAM) equations:</p>
-<div class="amsmath math">
-<p><span class="math">\begin{align*}
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
  a(t) &amp;= a,                                  \\ 
  v(t) &amp;= v_i  + at,                          \\[-2mm] 
  x(t) &amp;= x_i + v_it + \frac{1}{2}at^2.
-\end{align*}</span></p>
-</div><p>In high school, you probably had to memorize these equations.
+\end{align*}\]</div>
+<p>In high school, you probably had to memorize these equations.
 Now you know how to derive them yourself starting from first principles.</p>
 <p>For the sake of completeness, we’ll now derive the fourth UAM equation,
 which relates the object’s final velocity to the initial velocity,
@@ -458,9 +464,9 @@ the displacement, and the acceleration, without reference to time:</p>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_latex math">
-<p><span class="math">\displaystyle a^{2} t^{2} + 2 a t v_{i} + v_{i}^{2}</span></p>
-</div></div>
+<div class="output text_latex math notranslate nohighlight">
+\[\displaystyle a^{2} t^{2} + 2 a t v_{i} + v_{i}^{2}\]</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -469,24 +475,24 @@ the displacement, and the acceleration, without reference to time:</p>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_latex math">
-<p><span class="math">\displaystyle - 2 a x_{i} + v_{i}^{2}</span></p>
-</div></div>
+<div class="output text_latex math notranslate nohighlight">
+\[\displaystyle - 2 a x_{i} + v_{i}^{2}\]</div>
 </div>
-<p>The above calculation shows <span class="math">v_f^2 - 2ax_f = -2ax_i + v_i^2</span>.
-After moving the term <span class="math">2ax_f</span> to the other side of the equation, we obtain</p>
-<div class="amsmath math">
-<p><span class="math">\begin{align*}
+</div>
+<p>The above calculation shows <span class="math notranslate nohighlight">\(v_f^2 - 2ax_f = -2ax_i + v_i^2\)</span>.
+After moving the term <span class="math notranslate nohighlight">\(2ax_f\)</span> to the other side of the equation, we obtain</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
  (v(t))^2 \ = \ v_f^2 =  v_i^2  + 2a\Delta x \ = \  v_i^2  + 2a(x_f-x_i).
-\end{align*}</span></p>
-</div><p>The fourth equation is important for practical purposes
+\end{align*}\]</div>
+<p>The fourth equation is important for practical purposes
 because it allows us to solve physics problems in a time-less manner.</p>
 <div class="section" id="example">
 <h3>Example<a class="headerlink" href="#example" title="Permalink to this headline">¶</a></h3>
-<p>Find the position function of an object at time <span class="math">t=3[\mathrm{s}]</span>,
-if it starts from <span class="math">x_i=20[\mathrm{m}]</span> with <span class="math">v_i=10[\mathrm{m/s}]</span> and undergoes
-a constant acceleration of <span class="math">a=5[\mathrm{m/s^2}]</span>.
-What is the object’s velocity at <span class="math">t=3[\mathrm{s}]</span>?</p>
+<p>Find the position function of an object at time <span class="math notranslate nohighlight">\(t=3[\mathrm{s}]\)</span>,
+if it starts from <span class="math notranslate nohighlight">\(x_i=20[\mathrm{m}]\)</span> with <span class="math notranslate nohighlight">\(v_i=10[\mathrm{m/s}]\)</span> and undergoes
+a constant acceleration of <span class="math notranslate nohighlight">\(a=5[\mathrm{m/s^2}]\)</span>.
+What is the object’s velocity at <span class="math notranslate nohighlight">\(t=3[\mathrm{s}]\)</span>?</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">x_i</span> <span class="o">=</span> <span class="mi">20</span>  <span class="c1"># initial position</span>
@@ -498,9 +504,9 @@ What is the object’s velocity at <span class="math">t=3[\mathrm{s}]</span>?</p
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_latex math">
-<p><span class="math">\displaystyle \frac{5 t^{2}}{2} + 10 t + 20</span></p>
-</div></div>
+<div class="output text_latex math notranslate nohighlight">
+\[\displaystyle \frac{5 t^{2}}{2} + 10 t + 20\]</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -509,9 +515,9 @@ What is the object’s velocity at <span class="math">t=3[\mathrm{s}]</span>?</p
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_latex math">
-<p><span class="math">\displaystyle 72.5</span></p>
-</div></div>
+<div class="output text_latex math notranslate nohighlight">
+\[\displaystyle 72.5\]</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -520,9 +526,9 @@ What is the object’s velocity at <span class="math">t=3[\mathrm{s}]</span>?</p
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_latex math">
-<p><span class="math">\displaystyle 25.0</span></p>
-</div></div>
+<div class="output text_latex math notranslate nohighlight">
+\[\displaystyle 25.0\]</div>
+</div>
 </div>
 <p>If you think about it,
 physics knowledge combined with computer skills is like a superpower!</p>
@@ -531,10 +537,10 @@ physics knowledge combined with computer skills is like a superpower!</p>
 <div class="section" id="general-equations-of-motion">
 <h2>General equations of motion<a class="headerlink" href="#general-equations-of-motion" title="Permalink to this headline">¶</a></h2>
 <p>The procedure
-<span class="math">a(t) \ \overset{v_i+ \int\!dt }{\longrightarrow} \ v(t) \ \overset{x_i+ \int\!dt }{\longrightarrow} \ x(t)</span>
-can be used to obtain the position function <span class="math">x(t)</span> even when the acceleration is not constant.
-Suppose the acceleration of an object is <span class="math">a(t)=\sqrt{k t}</span>;
-what is its <span class="math">x(t)</span>?</p>
+<span class="math notranslate nohighlight">\(a(t) \ \overset{v_i+ \int\!dt }{\longrightarrow} \ v(t) \ \overset{x_i+ \int\!dt }{\longrightarrow} \ x(t)\)</span>
+can be used to obtain the position function <span class="math notranslate nohighlight">\(x(t)\)</span> even when the acceleration is not constant.
+Suppose the acceleration of an object is <span class="math notranslate nohighlight">\(a(t)=\sqrt{k t}\)</span>;
+what is its <span class="math notranslate nohighlight">\(x(t)\)</span>?</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">t</span><span class="p">,</span> <span class="n">v_i</span><span class="p">,</span> <span class="n">x_i</span><span class="p">,</span> <span class="n">k</span> <span class="o">=</span> <span class="n">symbols</span><span class="p">(</span><span class="s1">&#39;t v_i x_i k&#39;</span><span class="p">)</span>
@@ -545,23 +551,23 @@ what is its <span class="math">x(t)</span>?</p>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_latex math">
-<p><span class="math">\displaystyle t v_{i} + x_{i} + \frac{4 \left(k t\right)^{\frac{5}{2}}}{15 k^{2}}</span></p>
-</div></div>
+<div class="output text_latex math notranslate nohighlight">
+\[\displaystyle t v_{i} + x_{i} + \frac{4 \left(k t\right)^{\frac{5}{2}}}{15 k^{2}}\]</div>
+</div>
 </div>
 </div>
 <div class="section" id="potential-energy">
 <h2>Potential energy<a class="headerlink" href="#potential-energy" title="Permalink to this headline">¶</a></h2>
-<p>Instead of working with the kinematic equations of motion <span class="math">x(t)</span>, <span class="math">v(t)</span>, and <span class="math">a(t)</span> which depend on time,
+<p>Instead of working with the kinematic equations of motion <span class="math notranslate nohighlight">\(x(t)\)</span>, <span class="math notranslate nohighlight">\(v(t)\)</span>, and <span class="math notranslate nohighlight">\(a(t)\)</span> which depend on time,
 we can solve physics problems using <em>energy</em> calculations.
 A key connection between the world of forces and the world of energy is the concept of <em>potential energy</em>.
 If you move an object against a conservative force (think raising a ball in the air against the force of gravity),
 you can think of the work you do agains the force as being stored in the potential energy of the object.</p>
-<p>For each force <span class="math">\vec{F}(x)</span> there is a corresponding potential energy <span class="math">U_F(x)</span>.
-The change in potential energy associated with the force <span class="math">\vec{F}(x)</span> and displacement <span class="math">\vec{d}</span>
-is defined as the negative of the work done by the force during the displacement: <span class="math">U_F(x) = - W = - \int_{\vec{d}} \vec{F}(x)\cdot d\vec{x}</span>.</p>
-<p>The potential energies associated with gravity <span class="math">\vec{F}_g = -mg\hat{\jmath}</span>
-and the force of a spring <span class="math">\vec{F}_s = -k\vec{x}</span> are calculated as follows:</p>
+<p>For each force <span class="math notranslate nohighlight">\(\vec{F}(x)\)</span> there is a corresponding potential energy <span class="math notranslate nohighlight">\(U_F(x)\)</span>.
+The change in potential energy associated with the force <span class="math notranslate nohighlight">\(\vec{F}(x)\)</span> and displacement <span class="math notranslate nohighlight">\(\vec{d}\)</span>
+is defined as the negative of the work done by the force during the displacement: <span class="math notranslate nohighlight">\(U_F(x) = - W = - \int_{\vec{d}} \vec{F}(x)\cdot d\vec{x}\)</span>.</p>
+<p>The potential energies associated with gravity <span class="math notranslate nohighlight">\(\vec{F}_g = -mg\hat{\jmath}\)</span>
+and the force of a spring <span class="math notranslate nohighlight">\(\vec{F}_s = -k\vec{x}\)</span> are calculated as follows:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">x</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="n">symbols</span><span class="p">(</span><span class="s1">&#39;x y&#39;</span><span class="p">)</span>
@@ -573,9 +579,9 @@ and the force of a spring <span class="math">\vec{F}_s = -k\vec{x}</span> are ca
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_latex math">
-<p><span class="math">\displaystyle g h m</span></p>
-</div></div>
+<div class="output text_latex math notranslate nohighlight">
+\[\displaystyle g h m\]</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -586,29 +592,31 @@ and the force of a spring <span class="math">\vec{F}_s = -k\vec{x}</span> are ca
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_latex math">
-<p><span class="math">\displaystyle \frac{k x^{2}}{2}</span></p>
-</div></div>
+<div class="output text_latex math notranslate nohighlight">
+\[\displaystyle \frac{k x^{2}}{2}\]</div>
+</div>
 </div>
 <p>Note the negative sign in the formula defining the potential energy.
-This negative is canceled by the negative sign of the dot product <span class="math">\vec{F}\cdot d\vec{x}</span>:
+This negative is canceled by the negative sign of the dot product <span class="math notranslate nohighlight">\(\vec{F}\cdot d\vec{x}\)</span>:
 when the force acts in the direction opposite to the displacement,
 the work done by the force is negative.</p>
 </div>
 <div class="section" id="simple-harmonic-motion">
 <h2>Simple harmonic motion<a class="headerlink" href="#simple-harmonic-motion" title="Permalink to this headline">¶</a></h2>
-<p>The force exerted by a spring is given by the formula <span class="math">F=-kx</span>.
-If the only force acting on a mass <span class="math">m</span> is the force of a spring,
+<p>The force exerted by a spring is given by the formula <span class="math notranslate nohighlight">\(F=-kx\)</span>.
+If the only force acting on a mass <span class="math notranslate nohighlight">\(m\)</span> is the force of a spring,
 we can use Newton’s second law to obtain the following equation:</p>
-<div class="math">
-<p><span class="math">F=ma  
+<div class="math notranslate nohighlight">
+\[
+  F=ma  
   \quad \Rightarrow \quad
   -kx = ma   
   \quad \Rightarrow \quad
-  -kx(t) = m\frac{d^2}{dt^2}\Big[x(t)\Big].</span></p>
-</div><p>The motion of a mass-spring system is described by the <em>differential equation</em> <span class="math">\frac{d^2}{dt^2}x(t) + \omega^2 x(t)=0</span>,
-where the constant <span class="math">\omega = \sqrt{\frac{k}{m}}</span> is called the angular frequency.
-We can find the position function <span class="math">x(t)</span> using the <code class="docutils literal notranslate"><span class="pre">dsolve</span></code> method:</p>
+  -kx(t) = m\frac{d^2}{dt^2}\Big[x(t)\Big].
+\]</div>
+<p>The motion of a mass-spring system is described by the <em>differential equation</em> <span class="math notranslate nohighlight">\(\frac{d^2}{dt^2}x(t) + \omega^2 x(t)=0\)</span>,
+where the constant <span class="math notranslate nohighlight">\(\omega = \sqrt{\frac{k}{m}}\)</span> is called the angular frequency.
+We can find the position function <span class="math notranslate nohighlight">\(x(t)\)</span> using the <code class="docutils literal notranslate"><span class="pre">dsolve</span></code> method:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">t</span> <span class="o">=</span> <span class="n">Symbol</span><span class="p">(</span><span class="s1">&#39;t&#39;</span><span class="p">)</span>                 <span class="c1"># time t</span>
@@ -620,9 +628,9 @@ We can find the position function <span class="math">x(t)</span> using the <code
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_latex math">
-<p><span class="math">\displaystyle x{\left(t \right)} = C_{1} \sin{\left(t w \right)} + C_{2} \cos{\left(t w \right)}</span></p>
-</div></div>
+<div class="output text_latex math notranslate nohighlight">
+\[\displaystyle x{\left(t \right)} = C_{1} \sin{\left(t w \right)} + C_{2} \cos{\left(t w \right)}\]</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -632,11 +640,11 @@ We can find the position function <span class="math">x(t)</span> using the <code
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_latex math">
-<p><span class="math">\displaystyle C_{1} \sin{\left(t w \right)} + C_{2} \cos{\left(t w \right)}</span></p>
-</div></div>
+<div class="output text_latex math notranslate nohighlight">
+\[\displaystyle C_{1} \sin{\left(t w \right)} + C_{2} \cos{\left(t w \right)}\]</div>
 </div>
-<p>Note the solution <span class="math">x(t)=C_1\sin(\omega t)+C_2 \cos(\omega t)</span> is equivalent to <span class="math">x(t) = A\cos(\omega t + \phi)</span>,
+</div>
+<p>Note the solution <span class="math notranslate nohighlight">\(x(t)=C_1\sin(\omega t)+C_2 \cos(\omega t)\)</span> is equivalent to <span class="math notranslate nohighlight">\(x(t) = A\cos(\omega t + \phi)\)</span>,
 which is more commonly used to describe simple harmonic motion.
 We can use the <code class="docutils literal notranslate"><span class="pre">expand</span></code> function with the argument <code class="docutils literal notranslate"><span class="pre">trig=True</span></code> to convince ourselves of this equivalence:</p>
 <div class="cell docutils container">
@@ -647,17 +655,17 @@ We can use the <code class="docutils literal notranslate"><span class="pre">expa
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_latex math">
-<p><span class="math">\displaystyle A \sin{\left(\phi \right)} \sin{\left(t w \right)} + A \cos{\left(\phi \right)} \cos{\left(t w \right)}</span></p>
-</div></div>
+<div class="output text_latex math notranslate nohighlight">
+\[\displaystyle A \sin{\left(\phi \right)} \sin{\left(t w \right)} + A \cos{\left(\phi \right)} \cos{\left(t w \right)}\]</div>
 </div>
-<p>If we define <span class="math">C_1=A\sin(\phi)</span> and <span class="math">C_2=A\cos(\phi)</span>,
-we obtain the form <span class="math">x(t)=C_1\sin(\omega t)+C_2 \cos(\omega t)</span> that <code class="docutils literal notranslate"><span class="pre">SymPy</span></code> found.</p>
+</div>
+<p>If we define <span class="math notranslate nohighlight">\(C_1=A\sin(\phi)\)</span> and <span class="math notranslate nohighlight">\(C_2=A\cos(\phi)\)</span>,
+we obtain the form <span class="math notranslate nohighlight">\(x(t)=C_1\sin(\omega t)+C_2 \cos(\omega t)\)</span> that <code class="docutils literal notranslate"><span class="pre">SymPy</span></code> found.</p>
 </div>
 <div class="section" id="conservation-of-energy">
 <h2>Conservation of energy<a class="headerlink" href="#conservation-of-energy" title="Permalink to this headline">¶</a></h2>
 <p>We can verify that the total energy of the mass-spring system is conserved by showing
-<span class="math">E_T(t) = U_s(t) + K(t) = \textrm{constant}</span>:</p>
+<span class="math notranslate nohighlight">\(E_T(t) = U_s(t) + K(t) = \textrm{constant}\)</span>:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="n">sol</span><span class="o">.</span><span class="n">rhs</span><span class="o">.</span><span class="n">subs</span><span class="p">({</span><span class="s2">&quot;C1&quot;</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span><span class="s2">&quot;C2&quot;</span><span class="p">:</span><span class="n">A</span><span class="p">})</span> 
@@ -666,9 +674,9 @@ we obtain the form <span class="math">x(t)=C_1\sin(\omega t)+C_2 \cos(\omega t)<
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_latex math">
-<p><span class="math">\displaystyle A \cos{\left(t w \right)}</span></p>
-</div></div>
+<div class="output text_latex math notranslate nohighlight">
+\[\displaystyle A \cos{\left(t w \right)}\]</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -678,9 +686,9 @@ we obtain the form <span class="math">x(t)=C_1\sin(\omega t)+C_2 \cos(\omega t)<
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_latex math">
-<p><span class="math">\displaystyle - A w \sin{\left(t w \right)}</span></p>
-</div></div>
+<div class="output text_latex math notranslate nohighlight">
+\[\displaystyle - A w \sin{\left(t w \right)}\]</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -690,9 +698,9 @@ we obtain the form <span class="math">x(t)=C_1\sin(\omega t)+C_2 \cos(\omega t)<
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_latex math">
-<p><span class="math">\displaystyle 0.5 A^{2} \left(k \cos^{2}{\left(t w \right)} + m w^{2} \sin^{2}{\left(t w \right)}\right)</span></p>
-</div></div>
+<div class="output text_latex math notranslate nohighlight">
+\[\displaystyle 0.5 A^{2} \left(k \cos^{2}{\left(t w \right)} + m w^{2} \sin^{2}{\left(t w \right)}\right)\]</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -701,9 +709,9 @@ we obtain the form <span class="math">x(t)=C_1\sin(\omega t)+C_2 \cos(\omega t)<
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_latex math">
-<p><span class="math">\displaystyle 0.5 A^{2} m w^{2}</span></p>
-</div></div>
+<div class="output text_latex math notranslate nohighlight">
+\[\displaystyle 0.5 A^{2} m w^{2}\]</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -712,9 +720,9 @@ we obtain the form <span class="math">x(t)=C_1\sin(\omega t)+C_2 \cos(\omega t)<
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_latex math">
-<p><span class="math">\displaystyle 0.5 A^{2} k</span></p>
-</div></div>
+<div class="output text_latex math notranslate nohighlight">
+\[\displaystyle 0.5 A^{2} k\]</div>
+</div>
 </div>
 </div>
 </div>
