@@ -14,8 +14,8 @@ For digital download (PDF, ePub, mobi) see gumroad: https://gum.co/noBSmathphys 
 
 ## Contents
 
-- tutorials = self-contained explainers (1-3 pages)
-- missions = project based learning
+- [tutorials](./tutorials/intro) = self-contained explainers (1-3 pages)
+- [missions](./missions/intro) = project based learning
 
 
 
