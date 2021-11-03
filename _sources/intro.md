@@ -4,8 +4,7 @@ Lessons and missions to accompany [Chapter 2](https://minireference.com/static/e
 and [Chapter 4](https://minireference.com/static/excerpts/noBSmathphys_v5_preview.pdf#page=73) in the
 **No Bullshit Guide to Math & Physics** published by [Minieference Co.](https://minireference.com).
 
-:::{admonition}
-Product placement
+:::{admonition} Product placement
 The **No Bullshit Guide to Math & Physics**
 (Minireference Publishing, v5.4 2020, ISBN 0992001005) is available in print from 
 [amazon](https://amazon.com/dp/0992001005)
